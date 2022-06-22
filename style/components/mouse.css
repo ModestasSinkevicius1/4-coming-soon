@@ -1,3 +1,11 @@
 .mouse{
     font-size:40px;
 }
+
+.mouse>i{
+    transition: transform 2s ease;
+}
+
+.mouse>i:hover{
+    transform: translateY(20px);
+}
