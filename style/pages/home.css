@@ -7,37 +7,33 @@
 
 /*Components*/
 @import '../components/button.css';
-@import '../components/form.css';
 @import '../components/clock.css';
+@import '../components/form.css';
 @import '../components/mouse.css';
 @import '../components/progress-bar.css';
 @import '../components/scroll-up.css';
 
-.container.bg-main{
-    padding-bottom: 20px;
-}
-
 .hero{
-    padding: 40px;
+    padding-bottom: 20px;
 }
 
 .hero > .row-short{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0;
     gap:10px;
 }
 
 .logo{
     height: 40px;
     width: 100%;
+    margin-bottom: 30px;
     object-fit: contain;
 }
 
 .main-title{
     font-size: 50px;
-    margin: 20px 0 0 0;
+    margin: 0;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -52,7 +48,7 @@
 }
 
 .footer.container{
-    padding: 0;
+    padding-top: 0;
 }
 
 
