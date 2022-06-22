@@ -10,6 +10,7 @@ body{
     /*Custom properties / variables*/
     --main-color: #03A9F4;
     --secondary-color: #EA1E63;
+    --footer-color: #74D7FE;
 }
 
 .bg-main:first-child{
