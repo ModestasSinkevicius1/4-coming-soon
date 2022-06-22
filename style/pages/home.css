@@ -15,6 +15,7 @@
 
 .hero{
     padding-bottom: 20px;
+    color: white;
 }
 
 .hero > .row-short{
@@ -36,6 +37,7 @@
     margin: 0;
     text-transform: uppercase;
     font-weight: 800;
+    color: black;
 }
 
 .hero-description{
@@ -44,11 +46,12 @@
 }
 
 .hero-clock{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
-.footer.container{
-    padding-top: 0;
+footer.container{
+    padding-top: 20px;
+    color: white;
 }
 
 
