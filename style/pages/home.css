@@ -93,22 +93,6 @@
     display: flex;
 }
 
-.main-container::before{
-    content:"∧";
-    text-align: center;
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    background-color: var(--secondary-color);
-    position: absolute;
-    bottom: -25px;
-    right: 130px;
-    border-radius: 9999px;
-    box-sizing: border-box;
-    padding: 15px;
-    color: white;
-}
-
 /*Footer*/
 footer.container{
     padding-top: 0px;
@@ -149,7 +133,7 @@ footer.container{
     gap: 30px;
 }
 
-.copyright-container a{
+.copyright-container a, .row-short p:last-child a{
     color: white;
     text-decoration: none;
 }
@@ -181,6 +165,14 @@ footer.container{
 
 .copyright-container~p{
     margin:0;
+}
+
+@media(max-width:900px)
+{    
+    .form-2-container{
+        flex-direction: column;
+        gap: 0;
+    }    
 }
 
 @media(max-width:700px){

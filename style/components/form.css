@@ -1,4 +1,13 @@
-input[name="txt-email"]{
+
+#form-2-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+input[name="txt-email"],
+input[name="txt-email-2"],
+input[name="txt-name"]{
     margin: 20px 10px;
     background-color: transparent;
     border-style: none;
@@ -10,6 +19,25 @@ input[name="txt-email"]::placeholder{
     color: white;
 }
 
-input[name="txt-email"]:focus-visible{
+input[name="txt-email"]:focus-visible,
+input[name="txt-email-2"]:focus-visible,
+input[name="txt-name"]:focus-visible{
+    outline: none;
+}
+
+input[name="txt-email-2"],
+input[name="txt-name"]{
+    border-color: black;
+    margin: 20px 0;
+    width: 100%;
+}
+
+form+textarea.msg-textarea{
+    margin: 30px 0;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    resize: none;
     outline: none;
 }
