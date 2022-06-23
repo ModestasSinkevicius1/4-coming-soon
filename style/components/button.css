@@ -11,4 +11,5 @@
 
 .btn[name=btn-submit]{
     margin: 0;
+    align-self: flex-end;
 }
