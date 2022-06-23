@@ -1,0 +1,22 @@
+.hero-clock{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-clock > .clock-item{
+    width: 130px;
+}
+
+.hero-clock > .clock-item > p{
+    margin: 0;
+}
+
+.hero-clock > .clock-item > p > span{
+    font-size: 15px;
+    font-weight: normal;
+}

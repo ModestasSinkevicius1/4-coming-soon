@@ -1,0 +1,23 @@
+div.progress-bar{
+    line-height: 30px;
+}
+
+div.progress-bar>label{
+    margin: 0;
+}
+
+div.progress-bar>progress{
+    width: 100%;
+    accent-color: var(--main-color);
+    -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+    background-color: #ECECEC;
+    height: 5px;
+}
+::-webkit-progress-value {
+    background-color: var(--main-color);
+    height: 5px;
+}
+
