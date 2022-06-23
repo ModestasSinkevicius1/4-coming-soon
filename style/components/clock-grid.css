@@ -4,10 +4,7 @@
     font-size: 30px;
     font-weight: 800;
     line-height: 25px;
-}
-
-.hero-clock > .clock-item{
-    
+    gap:20px;
 }
 
 .hero-clock > .clock-item > p{

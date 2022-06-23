@@ -7,7 +7,7 @@
 
 /*Components*/
 @import '../components/button.css';
-/*@import '../components/clock.css';*/
+/*@import '../components/clock-flex.css';*/
 @import '../components/clock-grid.css';
 @import '../components/form.css';
 @import '../components/mouse.css';
