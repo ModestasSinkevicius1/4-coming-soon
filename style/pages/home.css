@@ -151,7 +151,7 @@ footer.container{
     content: ' ';
     display: block;
     width: 2px;
-    height:20px;
+    height:25px;
     background-color: var(--footer-color);
     position: absolute;
     top: 0;
@@ -185,5 +185,11 @@ footer.container{
     }
     .main-content>div{
         width: 100%;
+    }
+    .copyright-container{
+        flex-direction: column;
+    }
+    .copyright-container p::after{
+        display:none;
     }
 }
