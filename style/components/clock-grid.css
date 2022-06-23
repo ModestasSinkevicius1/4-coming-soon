@@ -1,0 +1,32 @@
+.hero-clock{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 25px;
+}
+
+.hero-clock > .clock-item{
+    
+}
+
+.hero-clock > .clock-item > p{
+    margin: 0;
+}
+
+.hero-clock > .clock-item > p > span{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+@media(max-width:1000px){
+    .hero-clock{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width:400px){
+    .hero-clock{
+        grid-template-columns: 100%;
+    }
+}
