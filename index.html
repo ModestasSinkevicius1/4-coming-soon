@@ -63,13 +63,13 @@
             </div>
         </div>      
   </section>
-  <section class="container">
-      <div class="main-content row">
+  <section class="container main-container">
+        <div class="main-content row">
           <div class="left-item item">
             <h2 class="item-title">About startup</h2>
             <p class="item-description">
                 Lorem ipsum dolor sit, amet consectetur 
-                adipisicing elit. Possimus quis exercitationem 
+                adipisicing elit. Possimus <a href="#">Matrox</a> quis exercitationem 
                 consequuntur eos, asperiores ullam hic itaque 
                 vero quibusdam a animi earum veritatis dolore 
                 quas magnam aperiam ducimus reiciendis voluptas?
@@ -87,23 +87,46 @@
             <p class="item-description">
                 Lorem ipsum dolor sit, amet consectetur 
                 adipisicing elit. Possimus quis exercitationem 
-                consequuntur eos, <a href="#">sadfa</a> asperiores ullam hic itaque 
-                vero quibusdam a animi earum veritatis dolore 
+                consequuntur eos, <a href="mailto:example@gmail.com">Jeff</a> 
+                asperiores ullam hic itaque vero quibusdam a animi earum veritatis dolore 
                 quas magnam aperiam ducimus reiciendis voluptas?
             </p>
-            <form action="">
-
+            <form id="form-2-container">
+                <input type="text" name="txt-name" placeholder="Name">
+                <input type="text" name="txt-email-2" placeholder="Email">
             </form>
-          </div>
+            <textarea class="msg-textarea" placeholder="Message" form="form-2-container"></textarea>
+            <input type="button" name="btn-submit" class="btn" value="Send Message" form="form-2-container">
+        </div>
       </div>       
   </section>
   <footer class="container bg-main">
-    <div class="row">
-        SOCIALS
-    </div>  
+    <div class="row socials">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-dribbble"></a>
+        <a href="#" class="fa fa-tumblr"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-rss"></a>
+    </div>
     <div class="row-short">
-        COPYRIGHT
-    </div>        
+        <img src="./img/footer_logo.png" alt="Footer logo" class="footer-logo">
+        <div class="copyright-container">
+            <p>Copyright &#169; 2022 <a href="#">Matrox</a></p>
+            <p>All rights reserved</p>
+            <p>Designed by <a href="#">TrendyTheme</a></p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Omnis reprehenderit debitis amet, aspernatur fugiat aut alias 
+            quibusdam, repellat cum provident voluptatum facere repudiandae 
+            praesentium, nemo voluptatibus eius accusantium quam totam.
+        </p>
+        <p>
+            <a href="#">200&deg;</a> ready html files only for 17&dollar; Purchase <a href="#">Matrox</a> Now!
+        </p>
+    </div>   
   </footer>
 </body>
 </html>
