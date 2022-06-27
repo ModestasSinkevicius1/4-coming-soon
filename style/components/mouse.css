@@ -3,9 +3,23 @@
 }
 
 .mouse>i{
-    transition: transform 2s ease;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
-.mouse>i:hover{
-    transform: translateY(20px);
+
+@keyframes scroll{
+    0% {
+        transform: translateY(0);
+        color: white;
+    }
+    30%{
+        color: white;
+    }
+    100% {
+        transform: translateY(20px);
+        color: transparent;
+    }
 }
