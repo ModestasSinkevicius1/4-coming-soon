@@ -6,18 +6,84 @@ div.progress-bar>label{
     margin: 0;
 }
 
-div.progress-bar>progress{
+.progress-bg{
+    background-color: #EDEFEC;
     width: 100%;
-    accent-color: var(--main-color);
-    -webkit-appearance: none;
+    height: 5px;
+    position: relative;
+    border-radius: 20px;
 }
 
-::-webkit-progress-bar {
-    background-color: #ECECEC;
-    height: 5px;
-}
-::-webkit-progress-value {
+.progress-value{
     background-color: var(--main-color);
-    height: 5px;
+    width: 60%;
+    height: inherit;
+    border-radius: inherit;
+    overflow: hidden;
 }
 
+.p-value-1{
+    animation-name: bar-1;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+
+.p-value-2{
+    animation-name: bar-2;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+
+.p-value-3{
+    animation-name: bar-3;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+
+.p-value-1::after{
+    content: '60%';
+    position:absolute;
+    bottom: 5px;
+    right: -3px;
+}
+
+.p-value-2::after{
+    content: '10%';
+    position:absolute;
+    bottom: 5px;
+    right: -3px;
+}
+
+.p-value-3::after{
+    content: '30%';
+    position:absolute;
+    bottom: 5px;
+    right: -3px;
+}
+
+@keyframes bar-1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes bar-2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 10%;
+    }
+}
+
+@keyframes bar-3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 30%;
+    }
+}
