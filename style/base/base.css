@@ -13,17 +13,6 @@ body{
     --footer-color: #74D7FE;
 }
 
-.bg-main:first-child{
-    /*background-image: linear-gradient(#A793F2, var(--main-color));*/
-    background-image: url("../../img/background.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
-.bg-main{
-    background-color: var(--main-color);
-}
-
 .bg-secondary{
     background-color: var(--secondary-color);
 }
