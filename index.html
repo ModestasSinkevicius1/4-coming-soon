@@ -96,16 +96,27 @@
                 quas magnam aperiam ducimus reiciendis voluptas?
             </p>
             <form id="form-2-container">
-                <input type="text" name="txt-name" placeholder="Name">
-                <input type="text" name="txt-email-2" placeholder="Email">
+                <div>
+                    <label for="name-input">Name</label>
+                    <input type="text" name="txt-name" placeholder="Name here..." id="name-input">
+                </div>
+                <div>
+                    <label for="email-input">Email</label>
+                    <input type="text" name="txt-email-2" placeholder="Email here..." id="email-input">
+                </div>
             </form>
-            <textarea class="msg-textarea" placeholder="Message" form="form-2-container"></textarea>
+            <div>
+                <label for="msg-box">Message</label>
+                <textarea class="msg-textarea" placeholder="Message here..." form="form-2-container" id="msg-box"></textarea>
+            </div>
             <input type="button" name="btn-submit" class="btn" value="Send Message" form="form-2-container">
         </div>
       </div>       
   </section>
   <footer class="container bg-main">
     <div class="row socials">
+        <a href="#" class="fa fa-angle-up back-to-top" style="scroll-behavior:smooth"></a>
+        
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-dribbble"></a>
