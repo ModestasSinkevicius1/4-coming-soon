@@ -56,10 +56,6 @@
 }
 
 /*Main*/
-.main-container{
-    height: 80vh;
-}
-
 .main-content{
     display: flex;
     justify-content: space-between;
