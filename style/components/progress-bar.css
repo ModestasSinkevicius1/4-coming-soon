@@ -1,5 +1,6 @@
 div.progress-bar{
     line-height: 30px;
+    position: relative;
 }
 
 div.progress-bar>label{
@@ -10,8 +11,8 @@ div.progress-bar>label{
     background-color: #EDEFEC;
     width: 100%;
     height: 5px;
-    position: relative;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .progress-value{
@@ -19,71 +20,39 @@ div.progress-bar>label{
     width: 60%;
     height: inherit;
     border-radius: inherit;
-    overflow: hidden;
-}
 
-.p-value-1{
-    animation-name: bar-1;
+    animation-name: bar;
     animation-duration: 3s;
     animation-direction: normal;
 }
 
-.p-value-2{
-    animation-name: bar-2;
-    animation-duration: 3s;
-    animation-direction: normal;
-}
-
-.p-value-3{
-    animation-name: bar-3;
-    animation-duration: 3s;
-    animation-direction: normal;
-}
-
-.p-value-1::after{
+.p-bg-1::after{
     content: '60%';
+    z-index: 10;
     position:absolute;
     bottom: 5px;
-    right: -3px;
+    right: 0;
 }
 
-.p-value-2::after{
+.p-bg-2::after{
     content: '10%';
     position:absolute;
     bottom: 5px;
-    right: -3px;
+    right: 0;
 }
 
-.p-value-3::after{
+.p-bg-3::after{
     content: '30%';
     position:absolute;
     bottom: 5px;
-    right: -3px;
+    right: 0;
 }
 
-@keyframes bar-1{
+@keyframes bar{
     0%{
-        width: 0;
+        transform: translateX(-100%);
     }
     100%{
-        width: 60%;
-    }
-}
-
-@keyframes bar-2{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 10%;
-    }
-}
-
-@keyframes bar-3{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 30%;
+        transform: translateX(0);
     }
 }
